@@ -1,0 +1,22 @@
+/*
+ * Copyright (c) 2025
+ * SPDX-License-Identifier: MIT
+ *
+ * Test keymap for SF32LB52-DevKit-LCD
+ * KEY1 -> A, KEY2 -> B
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &kp A  &kp B
+            >;
+        };
+    };
+};
